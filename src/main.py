@@ -12,8 +12,8 @@ def hello_world():
 def process_messages():
     current_path = os.path.dirname(__file__)
 
-    vectorizer = joblib.load(os.path.join(current_path, "files/vectorizers/vectorizer.joblib"))
-    model = joblib.load(os.path.join(current_path, "files/models/model.joblib"))
+    vectorizer = joblib.load(os.path.join(current_path, "../files/vectorizers/vectorizer.joblib"))
+    model = joblib.load(os.path.join(current_path, "../files/models/model.joblib"))
 
     body = request.get_json()
     response = []
